@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    background-color: darkgray;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+/*-------------------------------------------ChatBox -------------------------------------------------*/
+        #chatBox {
+            background-color: aqua;
+            width: 60%;
+            height: 100%;
+            float: left;
+        }
+
+                #selectedUser {
+                    height: 15%;
+                }
+
+                #displayMessages {
+                    height: 70%;
+                    overflow:auto;
+
+                }
+
+                #sendMessages {
+                    height: 15%;
+                }
+/*--------------------------------------------END of ChatBox--------------------------------------------------*/
+
+/*--------------------------------------------Options----------------------------------------------------------*/
+        #options {
+            background-color: antiquewhite;
+            width: 40%;
+            height: 100%;
+            float: left;
+        }
+
+                #profile {
+                    height: 40%;
+                }
+
+                #search {
+                    height: 20%;
+                }
+
+                #usersList {
+                    height: 40%;
+                }
+
+/*--------------------------------------------END of Options----------------------------------------------------------*/
