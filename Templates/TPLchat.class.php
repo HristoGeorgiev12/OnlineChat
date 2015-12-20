@@ -256,26 +256,37 @@ class TPLchat extends Template {
 
                 </div><!-- END of search-->
                 <div id="usersList">
-                    <p id="strangersList">Списък с недобавени абонати</p>
-                    <!--            Списък с абонати -->
-                    <?php
-                    $display=$this->selectWhere("chat", "favorites",array("sender_id"=>$userId), true);
-                    $displayUsers=$this->displayUsers("chat","users", $display);
-//                            var_dump($selectWhere);
-                    foreach($displayUsers as $value) {
-                        echo ' <img src="'.$this->selectWhere("chat","users",array("id"=>$value["id"]), false)["image"].'" alt="picture" style="width:28px;height:28px" />'."<a href='?page=chat&receiver_id={$value['id']}'>".$value['nickName']."</a><br>";
-                    }
-                    ?>
+                    <a href="#" id="strangers">Непознати</a>
+<!--                    <input type="button" value="Непознати" id="strangers">-->
+                    <input type="button" value="Познати" id="favorites">
 
-                    <p id="friendsList">Списък на приятели</p>
-                    <?php
-//                        $favorites = $this->selectWhere("chat", "favorites", array("sender_id"=>$userId),true);
-//                    $favorites = $this->displayFavorites("chat", "favorites", $userId, $this->aParam["receiver_id"]);
-//                        var_dump($favorites);
-//                        foreach($favorites as $value) {
-//                            echo ' <img src="'.$this->selectWhere("chat","users",array("id"=>$value["id"]), false)["image"].'" alt="picture" style="width:28px;height:28px" />'."<a href='?page=chat&receiver_id={$value['id']}'>".$value['nickName']."</a><br>";
-//                        }
-                    ?>
+                    <!--            Списък с абонати -->
+                    <div id="strangersList">
+                        <p>Списък с недобавени абонати</p>
+                        <?php
+                        //Недобавени
+                        $display=$this->selectWhere("chat", "favorites",array("sender_id"=>$userId), true);
+                        $displayUsers=$this->displayUsers("chat","users", $display);
+                        foreach($displayUsers as $value) {
+                            echo ' <img src="'.$this->selectWhere("chat","users",array("id"=>$value["id"]), false)["image"].'" alt="picture" style="width:28px;height:28px" />'."<a href='?page=chat&receiver_id={$value['id']}'>".$value['nickName']."</a><br>";
+                        }
+                        //Край на недобавени
+                        ?>
+                    </div>
+
+
+                    <div id="friendsList">
+                        <p>Списък на приятели</p>
+                        <?php
+                        //Добавени
+                        $favorites = $this->displayFavorites("chat", "favorites", $userId, $this->aParam["receiver_id"]);
+                        foreach($favorites as $value) {
+                            echo ' <img src="' . $value["image"] . '" alt="picture" style="width:28px;height:28px" />' . "<a href='?page=chat&receiver_id={$value['id']}'>" . $value['nickName'] . "</a><br>";
+                        }
+                        //Край на добавени
+                        ?>
+                    </div>
+
 
                 </div><!--END of usersList-->
             </div><!-- END of options-->
@@ -283,23 +294,33 @@ class TPLchat extends Template {
         </div><!--END of Wrapper-->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>
+            $("#strangers").click(function() {
+                $("#strangersList").show();
+               $("#friendsList").hide();
+            });
+
+            $("#favorites").click(function() {
+                $("#strangersList").hide();
+                $("#friendsList").show();
+            });
+
 //          display chat conversation dynamically
-            var interval = setInterval(function() {
-
-                var date;
-                $.ajax({
-                    success: function(data) {
-                        var json = JSON.parse(data);
-                        $.each(JSON.parse(data), function() {
-                            $('#displayMessages').append(json.message+"<br>");
-                            date= json.id;
-                        });
-                    },
-                    type: 'GET',
-                    url: 'Templates/processingAJAX.php?last='+date
-
-                })
-            }, 1000);
+//            var interval = setInterval(function() {
+//
+//                var date;
+//                $.ajax({
+//                    success: function(data) {
+//                        var json = JSON.parse(data);
+//                        $.each(JSON.parse(data), function() {
+//                            $('#displayMessages').append(json.message+"<br>");
+//                            date= json.id;
+//                        });
+//                    },
+//                    type: 'GET',
+//                    url: 'Templates/processingAJAX.php?last='+date
+//
+//                })
+//            }, 1000);
 
 //            insert data via ajax and jquery;
             $("#messageSubmit").on('click', function() {
@@ -316,19 +337,26 @@ class TPLchat extends Template {
                 })
             });
 
-$("#friendsList").on('click', function() {
-    $.ajax({
-        type: 'GET',
-        url: 'Templates/processingAJAX.php',
-//        data: {
-//            processMessage:$("#message").val(),
-//            receiver_id:'<?php //echo $this->aParam["receiver_id"];?>//'
-//        },
-        success: function(data) {
-            $('#displayMessages').append($("#message").val()+ "<br>");
-        }
-    })
-});
+//            Onclick display unknown users
+//            $("#friendsList").on('click', function() {
+//                $.ajax({
+//                    type: 'GET',
+//                    url: 'Templates/processingAJAX.php',
+//            //        data: {
+//            //            processMessage:$("#message").val(),
+//            //            receiver_id:'<?php ////echo $this->aParam["receiver_id"];?>////'
+//            //        },
+//                    success: function(data) {
+//                        var json = JSON.parse(data);
+////                        $.each(JSON.parse(data), function(index, value) {
+//                            $('#usersList').append("ehoooooo<br>");
+////                            $('#usersList').append(value+json.message+"<br>");
+////                            date= json.id;
+//                            console.log('success', data);
+////                        });
+//                    }
+//                })
+//            });
 
             $("#displayMessages"). scrollTop($(document).height());
         </script>
