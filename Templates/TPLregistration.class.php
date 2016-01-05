@@ -48,36 +48,55 @@ class TPLregistration extends Template {
         echo $this->insertRegistrationArray();
 
         ?>
-        <h3>Регистрация</h3>
-        <form action="" method="post">
+        <div class="container" >
+            <div class="row row-centered">
+                <div class="col-md-4">
+                    <div class="well well-sm" id="registrationForm">
+                        <h3>Регистрация</h3>
+                        <form action="" method="post">
 
-            <input type="text"
-                   name="nickName"
-                   placeholder="Име"
-                   required><br>
+                            <input type="text"
+                                   class="form-control"
+                                   name="nickName"
+                                   placeholder="Име"
+                                   required><br>
 
-            <input type="email"
-                   name="userEmail"
-                   placeholder="Емайл адрес"
-                   required><br>
+                            <input type="email"
+                                   class="form-control"
+                                   name="userEmail"
+                                   placeholder="Емайл адрес"
+                                   required><br>
 
-            <input type="password"
-                   name="userPassword"
-                   placeholder="Парола"
-                   required><br>
+                            <input type="password"
+                                   class="form-control"
+                                   name="userPassword"
+                                   placeholder="Парола"
+                                   required><br>
 
-            <input type="password"
-                   name="userPasswordConfirm"
-                   placeholder="Повторни Паролата"
-                   required><br>
+                            <input type="password"
+                                   class="form-control"
+                                   name="userPasswordConfirm"
+                                   placeholder="Повторни Паролата"
+                                   required><br>
 
-            <input type="submit"
-                   name="submitRegistration"
-                   value="Регистрирай ме"
-                   required><br>
+                            <a href="?page=index" class="btn btn-warning"><span class="glyphicon glyphicon-arrow-left"></span> Назад</a>
 
-            <a href="?page=index" > << Обратно към главната станица.</a>
-        </form>
+                            <input type="submit"
+                                   class="btn btn-primary pull-right"
+                                   name="submitRegistration"
+                                   value="Регистрирай ме!"
+                                   required>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
         <?php
     }
 

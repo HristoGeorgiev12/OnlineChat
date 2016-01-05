@@ -99,12 +99,12 @@ class TPLchat extends Template {
         echo  $userId;
         ?>
         <?php
+//       Добави към списък с фаворити;
         if(isset($this->aParam["addToFavoriteList"])) {
-            echo "hello";
-//            $this->addToFavoriteList($userId,$this->aParam["receiver_id"]);
                 $this->insert("chat", "favorites", array("sender_id"=>$userId, "receiver_id"=>$this->aParam["receiver_id"]));
         }
 
+//        Премахни от списък с фаворити;
         if(isset($this->aParam["removeFromFavorites"])) {
             $this->delete("chat", "favorites", $userId, $this->aParam["receiver_id"]);
         }
@@ -292,7 +292,7 @@ class TPLchat extends Template {
             </div><!-- END of options-->
 
         </div><!--END of Wrapper-->
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
         <script>
             $("#strangers").click(function() {
                 $("#strangersList").show();
