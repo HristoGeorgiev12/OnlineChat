@@ -19,21 +19,38 @@ class TPLindex extends Template {
                 header("Location:?page=chat");
             }
         ?>
-            <h1>Влезте в профила си!</h1>
-            <form action="?page=login" method="post">
-                <input type="email"
-                        name="loginEmail"
-                        placeholder="Въведете електронната си поща!"
-                        required><br>
-                <input type="password"
-                        name="loginPassword"
-                        placeholder="Въведете парола!"
-                        required><br>
-                <input type="submit"
-                        name="loginSubmit"
-                        value="Впиши ме">
-            </form>
-            <a href="?page=registration">Регистрирай се!</a>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="well well-sm">
+                        <h3>Вписване</h3>
+                        <form action="?page=login" method="post">
+                            <input type="email"
+                                   class="form-control"
+                                   name="loginEmail"
+                                   placeholder="Въведете електронната си поща!"
+                                   required><br>
+
+                            <input type="password"
+                                   class="form-control"
+                                   name="loginPassword"
+                                   placeholder="Въведете парола!"
+                                   required><br>
+
+                            <a href="?page=registration" class="btn btn-default">Регистрирай се!</a>
+
+                            <button type="submit"
+                                    class="btn btn-primary"
+                                    name="loginSubmit">Впиши ме <span class="glyphicon glyphicon-arrow-right"></span></button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <?php
     }
 }
