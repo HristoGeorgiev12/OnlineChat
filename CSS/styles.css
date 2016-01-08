@@ -1,58 +1,71 @@
 #wrapper {
-    background-color: darkgray;
-    width: 90%;
-    height: 90%;
-    margin: auto;
+    /*background-color: darkgray;*/
+    /*width: 90%;*/
+    /*height: 90%;*/
+    /*margin: auto;*/
 }
 
-/*-------------------------------------------ChatBox -------------------------------------------------*/
-        #chatBox {
-            background-color: aqua;
-            width: 60%;
-            height: 100%;
-            float: left;
-        }
+textarea {
+    resize: none;
+}
 
-                #selectedUser {
-                    height: 15%;
-                }
+.center {
+    min-width: 280px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%)
+}
 
-                #displayMessages {
-                    height: 70%;
-                    overflow:auto;
-
-                }
-
-                #sendMessages {
-                    height: 15%;
-                }
-/*--------------------------------------------END of ChatBox--------------------------------------------------*/
-
-/*--------------------------------------------Options----------------------------------------------------------*/
-        #options {
-            background-color: antiquewhite;
-            width: 40%;
-            height: 100%;
-            float: left;
-        }
-
-                #profile {
-                    height: 40%;
-                }
-
-                #search {
-                    height: 20%;
-                }
-
-                #usersList {
-                    height: 40%;
-                }
-
-/*--------------------------------------------END of Options----------------------------------------------------------*/
-
-
-/*Registration*/
-    #registrationForm {
-
+/*Chatbox*/
+    #displayMessages {
+        height: 500px;
+        overflow: auto;
     }
-/*END Registration*/
+
+    #sendMessages textarea {
+        height: auto;
+        /*border: none;*/
+    }
+
+    #messageSubmit {
+        font-size: 1.4em;
+        margin-top: -40px;
+    }
+
+/*END Chatbox*/
+
+/*====================================================================================*/
+
+/*Profile*/
+    #share {
+        width: 200px;
+        height: 120px;
+        float: left;
+    }
+
+    #share textarea {
+        height: 100%;
+    }
+
+    #profilePicture {
+        float: left;
+    }
+
+/*END Profile*/
+
+/*=============================================================*/
+
+/*Users List*/
+    #usersList {
+        height: 352px;
+    }
+
+    .usersList {
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+
+/*END Users List*/

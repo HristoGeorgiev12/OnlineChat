@@ -34,7 +34,7 @@ class TPLlogin extends Template {
 
 
         //Logout from account;
-        if(isset($_POST['logout'])) {
+        if(isset($this->aParam['logOut'])) {
             session_destroy();
             header("Location:?page=index");
             exit;
@@ -47,8 +47,6 @@ class TPLlogin extends Template {
     }
 
     protected function Body() {
-        echo "hi";
        echo  $this->loginCheck();
-        var_dump($this->loginCheck());
     }
 }

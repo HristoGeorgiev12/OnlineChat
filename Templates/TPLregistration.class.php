@@ -49,9 +49,9 @@ class TPLregistration extends Template {
 
         ?>
         <div class="container" >
-            <div class="row row-centered">
+            <div class="row">
                 <div class="col-md-4">
-                    <div class="well well-sm" id="registrationForm">
+                    <div class="well well-sm center">
                         <h3>Регистрация</h3>
                         <form action="" method="post">
 
@@ -79,13 +79,15 @@ class TPLregistration extends Template {
                                    placeholder="Повторни Паролата"
                                    required><br>
 
-                            <a href="?page=index" class="btn btn-warning"><span class="glyphicon glyphicon-arrow-left"></span> Назад</a>
+                            <a href="?page=index" class="btn btn-warning"><span class="glyphicon glyphicon-circle-arrow-left"></span> Назад</a>
+<!---->
+<!--                            <input type="submit"-->
+<!--                                   class="btn btn-primary pull-right"-->
+<!--                                   name="submitRegistration"-->
+<!--                                   value="Регистрирай ме!"-->
+<!--                                   required>-->
 
-                            <input type="submit"
-                                   class="btn btn-primary pull-right"
-                                   name="submitRegistration"
-                                   value="Регистрирай ме!"
-                                   required>
+                            <button type="submit" class="btn btn-primary pull-right" name="submitRegistration">Регистрирай ме <span class="glyphicon glyphicon-user"></span></button>
 
 
                         </form>
