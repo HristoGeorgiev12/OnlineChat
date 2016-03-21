@@ -9,6 +9,11 @@ textarea {
     resize: none;
 }
 
+
+form {
+    margin: 0px;
+}
+
 .center {
     min-width: 280px;
     position: fixed;
@@ -18,21 +23,149 @@ textarea {
     transform: translate(-50%,-50%)
 }
 
+/*/!*Img form hidden and triggered via a-tag*!/*/
+#profileImgForm {
+    display: none;
+}
+
+/*Хорнология на чата*/
+/*#historySearchDiv {*/
+    /*display:none;*/
+/*}*/
+
+/*Край на хронологията на чата*/
+
 /*Chatbox*/
-    #displayMessages {
-        height: 500px;
+    #chatBox {
+        display: table;
+        height: 100%;
+    }
+
+    #chatHistory {
+        /*width: 200px;*/
+        /*display: inline;*/
+        /*display: table;*/
+    }
+
+    #chat  {
+        height: 70%;
         overflow: auto;
+    }
+
+    #selectedUser {
+        position: relative;
+    }
+
+        #chatHistoryToggle {
+            position: absolute;
+            bottom: 9px;
+            right: 9px;
+        }
+
+        #noCorrespondence, #showMoreDown, #showMoreUp {
+            display: none;
+        }
+
+        #displayMessages .history:hover {
+            cursor: hand;
+            background-color: chartreuse;
+        }
+
+        /*ScrollBar for the chat*/
+        #chat::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        #chat::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            border-radius: 10px;
+        }
+
+        #chat::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+        }
+        /*End of scrollbar*/
+
+    .interlocutor h2 {
+        display: inline-block;
+        margin-top: 0px;
+    }
+
+    #userThoughts {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+
+    #displayMessages {
+        word-wrap: break-word;
+    }
+
+    /*#displayMessages .me {*/
+        /*background-color: #269abc;*/
+        /*margin: 0px;*/
+    /*}*/
+
+    /*#displayMessages .interlocutor {*/
+        /*background-color: orangered;*/
+        /*margin: 0px;*/
+    /*}*/
+
+    /*#selectedUser, #displayMessages .interlocutor {*/
+        /*background-color: orangered;*/
+    /*}*/
+
+    #sendMessages {
+        position: relative;
     }
 
     #sendMessages textarea {
         height: auto;
-        /*border: none;*/
+        width: 90%;
+        display: inline-block;
+        border-color: #1C263C;
     }
 
-    #messageSubmit {
-        font-size: 1.4em;
-        margin-top: -40px;
+    /*#submit {*/
+        /*position: absolute;*/
+        /*right: 9px;*/
+        /*top: 40px;*/
+        /*border-color: #1C263C;*/
+    /*}*/
+
+    #emoticonOverViewButton {
+        right:9px;
+        top: 9px;
+        position: absolute;
+        border-color: #1C263C;
     }
+
+    #emoticonOverViewButton img{
+        width: 16px;
+        height: 16px;
+    }
+
+    #overview {
+        display: none;
+        right: 15px;
+        bottom: 100px;
+        /*width: auto;*/
+        /*height: auto;*/
+        position: absolute;
+        background-color: white;
+        width: 370px;
+        /*z-index: 1;*/
+        /*overflow: scroll;*/
+    }
+
+    #overview span {
+        cursor: hand;
+    }
+
+    #overview span:hover {
+        background-color: lightgrey;
+    }
+
 
 /*END Chatbox*/
 
@@ -48,24 +181,112 @@ textarea {
     #share textarea {
         height: 100%;
     }
+/*END Profile*/
 
-    #profilePicture {
-        float: left;
+/*SEARCH*/
+    .notFound {
+        color: #d43f3a;
     }
 
-/*END Profile*/
+/*SEARCH*/
 
 /*=============================================================*/
 
 /*Users List*/
     #usersList {
-        height: 352px;
+        /*max-height: 352px;*/
+        height: 55%;
+        overflow: auto;
     }
 
-    .usersList {
-        width: 50%;
-        float: left;
-        text-align: center;
+                /*ScrollBar for the users lists*/
+                #usersList::-webkit-scrollbar {
+                    width: 12px;
+                }
+
+                #usersList::-webkit-scrollbar-track {
+                    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                    border-radius: 10px;
+                }
+
+                #usersList::-webkit-scrollbar-thumb {
+                    border-radius: 10px;
+                    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+                }
+                /*End of scrollbar*/
+
+    #usersList img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #usersList div {
+        cursor: hand;
+        background-color: #aaaaaa;
+    }
+
+    #usersList div:hover{
+        background-color: transparent;
+        color: #0097cf;
     }
 
 /*END Users List*/
+
+/*TypeAhead Style*/
+.tt-input, /* UPDATE: newer versions use tt-input instead of tt-query */
+.tt-hint {
+    width: 396px;
+    height: 30px;
+    padding: 8px 12px;
+    font-size: 24px;
+    line-height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.tt-input { /* UPDATE: newer versions use tt-input instead of tt-query */
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+    color: #999;
+}
+
+.tt-menu { /* UPDATE: newer versions use tt-menu instead of tt-dropdown-menu */
+    width: 422px;
+    margin-top: 12px;
+    padding: 8px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+    padding: 3px 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+.tt-suggestion:hover {
+    background-color: #269abc;
+    cursor: pointer;
+}
+
+.tt-suggestion.tt-cursor { /* UPDATE: newer versions use .tt-suggestion.tt-cursor */
+    color: #fff;
+    background-color: #0097cf;
+
+}
+
+.tt-suggestion p {
+    margin: 0;
+}
+
+.twitter-typeahead,
+.tt-hint,
+.tt-input,
+.tt-menu {
+    width: 100%;
+}

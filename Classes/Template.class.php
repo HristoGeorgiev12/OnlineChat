@@ -20,8 +20,6 @@ class Template {
         $this->aParam = $parameters;
     }
 
-
-
     //Select method;
     protected function select($dataBase,$table) {
         $db = new Connect($dataBase,$table);
@@ -33,9 +31,8 @@ class Template {
 
     }
 
-
     //Select method;
-    protected function selectWhere($dataBase,$table,$insertArray, $fetchAll=false) {
+    public function selectWhere($dataBase,$table,$insertArray, $fetchAll=false) {
         $db = new Connect($dataBase,$table);
 
         $queryArray = array();
@@ -55,8 +52,6 @@ class Template {
 //        else
 //            return $connect->fetchAll();
     }
-
-
 
     //Insert data in the corresponding database and table;
     public function insert($dataBase, $table, $insertArray) {
@@ -109,7 +104,7 @@ class Template {
         return $insertArray;
     }
 
-    protected function delete($dataBase, $table, $sender_id, $receiver_id) {
+    public function delete($dataBase, $table, $sender_id, $receiver_id) {
         $db = new Connect($dataBase,$table);
 
         $delete =$db->connect->prepare("DELETE FROM $table
@@ -143,14 +138,27 @@ class Template {
 <!--                    CSS-->
                     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
                     <link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
+                    <link rel="stylesheet" type="text/css" href="CSS/lightbox.css">
+
+                    <link rel="stylesheet" type="text/css" href="CSS/emoticons/emoticons.css">
+
+<!--                    Colors Scheme-->
+                    <link rel="stylesheet" type="text/css" href="CSS/colors/colorCombo.css">
 
 <!--                    JS-->
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+                    <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
                     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+                    <script src="js/typeahead.jquery.js"></script>
+                    <script src="js/emoticons.js"></script>
+                    <script src="//js.pusher.com/3.0/pusher.min.js"></script>
 
                 </head>
                 <body>
                     <?php $this->Body();?>
+
+                    <!--        LightBox script-->
+                    <script src="js/lightbox.js"></script>
                 </body>
             </html>
         <?php

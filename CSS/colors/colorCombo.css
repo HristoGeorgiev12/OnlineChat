@@ -1,0 +1,31 @@
+body, #wrapper, .row {
+    color: #f5f5f5;
+    background-color: #1C263C;
+    /*border: #B6C0D2;*/
+}
+
+textarea, input, button {
+    border-color: #1C263C; !important;
+}
+
+#displayMessages .me {
+    background-color: #B6C0D2;
+}
+
+*#selectedUser,#displayMessages .interlocutor {
+    /*background-color: #313C53;*/
+    background-color: #aaaaaa;
+}
+
+#listOfUsers div div{
+    background-color: #aaaaaa;
+    cursor: hand;
+}
+
+#listOfUsers div div:hover{
+    background-color: #f5f5f5;
+}
+
+#noCorrespondence {
+    background-color: #d43f3a;
+}

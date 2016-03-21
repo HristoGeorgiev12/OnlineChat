@@ -52,7 +52,7 @@ class TPLregistration extends Template {
             <div class="row">
                 <div class="col-md-4">
                     <div class="well well-sm center">
-                        <h3>Регистрация</h3>
+                        <h4>Регистрация</h4>
                         <form action="" method="post">
 
                             <input type="text"

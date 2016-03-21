@@ -12,7 +12,7 @@ class Connect {
     public $table;
 
     public function __construct($database, $table) {
-        $this->connect = new PDO('mysql:host=localhost;dbname='.$database.';charset=utf8', 'root', '');
+        $this->connect = new PDO('mysql:host=localhost;dbname='.$database.';charset=utf8', 'root', '0000');
         $this->connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->table = $table;
     }

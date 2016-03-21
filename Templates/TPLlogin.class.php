@@ -21,6 +21,9 @@ class TPLlogin extends Template {
                 $_SESSION['successfulLogin']=$result['nickName'];
                 $_SESSION["userId"]=$result["id"];
                 $_SESSION["check"] = 12;
+
+                $this->update('chat', 'users',['status'=> 1], $_SESSION['userId']);
+
                 header("Location:?page=chat");
                 exit;
             }else{
@@ -35,7 +38,10 @@ class TPLlogin extends Template {
 
         //Logout from account;
         if(isset($this->aParam['logOut'])) {
+            $this->update('chat', 'users',['status'=> 0], $_SESSION['userId']);
+
             session_destroy();
+
             header("Location:?page=index");
             exit;
         }

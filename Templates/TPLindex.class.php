@@ -21,10 +21,10 @@ class TPLindex extends Template {
         ?>
 
         <div class="container">
-            <div class="row">
+            <div class="row ">
                 <div class="col-md-4">
-                    <div class="well well-sm">
-                        <h3>Вписване</h3>
+                    <div class="well well-sm center">
+                        <h4>Вписване</h4>
                         <form action="?page=login" method="post">
                             <input type="email"
                                    class="form-control"
@@ -42,7 +42,7 @@ class TPLindex extends Template {
 
                             <button type="submit"
                                     class="btn btn-primary"
-                                    name="loginSubmit">Впиши ме <span class="glyphicon glyphicon-arrow-right"></span></button>
+                                    name="loginSubmit">Впиши ме <span class="glyphicon glyphicon-log-in"></span></button>
 
                         </form>
 
