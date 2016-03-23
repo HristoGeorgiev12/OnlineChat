@@ -133,7 +133,9 @@ class Template {
                     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <!--                    Title-->
-                    <title><?php echo $this->Title();?></title>
+                    <title>
+                        <?php echo $this->Title();?>
+                    </title>
 
 <!--                    CSS-->
                     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
@@ -145,20 +147,22 @@ class Template {
 <!--                    Colors Scheme-->
                     <link rel="stylesheet" type="text/css" href="CSS/colors/colorCombo.css">
 
-<!--                    JS-->
-<!--                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-                    <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
-                    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-                    <script src="js/typeahead.jquery.js"></script>
-                    <script src="js/emoticons.js"></script>
-                    <script src="//js.pusher.com/3.0/pusher.min.js"></script>
+
+
 
                 </head>
                 <body>
                     <?php $this->Body();?>
 
-                    <!--        LightBox script-->
+                    <!--                    JS-->
+                    <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+                    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+                    <script src="js/typeahead.jquery.js"></script>
+                    <script src="js/emoticons.js"></script>
+                    <script src="//js.pusher.com/3.0/pusher.min.js"></script>
                     <script src="js/lightbox.js"></script>
+                    <script src="js/main.js"></script>
+
                 </body>
             </html>
         <?php

@@ -23,7 +23,7 @@ function loadMessages($sender_id) {
 }
 
 ////ид-то да се взима и да се добавя само ред след последното ид;
-function displayLastRecordInChat($dataBase,$table,$sender_id, $receiver_id, $lastAdded, $order, $limit ) {
+function displayLastRecordInChat($dataBase,$table,$sender_id, $receiver_id, $lastAdded, $order, $limit, $operator ) {
     $db = new Connect($dataBase,$table);
 //        chat.sender_id, users.nickName, chat.message
     $connect = $db->connect->prepare("SELECT
@@ -48,7 +48,7 @@ function displayLastRecordInChat($dataBase,$table,$sender_id, $receiver_id, $las
                                       WHERE 1
                                           AND (sender_id=$sender_id OR sender_id=$receiver_id)
                                           AND (receiver_id=$receiver_id OR receiver_id=$sender_id)
-                                          AND chat.id>=$lastAdded
+                                          AND chat.id$operator$lastAdded
                                       ORDER BY id $order
                                       LIMIT $limit");
     $connect->execute();
@@ -60,7 +60,7 @@ function displayLastRecordInChat($dataBase,$table,$sender_id, $receiver_id, $las
 //функция която да връща броя непрочетениете съобщения
 function countUnreadMessages($dataBase, $table, $sender_id, $lastAdded) {
     $db = new Connect($dataBase,$table);
-    $connect = $db->connect->prepare("SELECT MAX(id) AS maxId, sender_id, COUNT(id) AS numberOfRows
+    $connect = $db->connect->prepare("SELECT MAX(id) AS maxId, sender_id, COUNT(id) AS numRows
                                           FROM ".$table."
                                           WHERE receiver_id=$sender_id
                                           AND chat.id>$lastAdded
@@ -143,14 +143,29 @@ function friendOrStranger($dataBase, $table, $receiver_id ) {
 }
 
 //Списък на потребителите;
-function userListDisplay($dataBase, $table, $sender_id) {
+function userListDisplay($dataBase, $table, $sender_id, $friend) {
     $db = new Connect($dataBase,$table);
-    $connect = $db->connect->prepare("    SELECT
-                                                id,
-                                                nickName,
-                                                image
-                                            FROM users
-                                            WHERE id!=$sender_id");
+
+    $query = $friend=='true'?
+        "SELECT
+               u.id,
+               u.nickName,
+               u.image,
+               f.receiver_id
+            FROM users u
+            INNER JOIN favorites f
+            ON f.receiver_id=u.id
+            WHERE u.id!=$sender_id":
+        "SELECT
+                *
+            FROM users
+            WHERE id!=$sender_id
+            AND id NOT IN (SELECT receiver_id FROM favorites)";
+
+
+
+        $connect = $db->connect->prepare($query);
+
 
 
     $connect->execute();
@@ -207,14 +222,13 @@ function triggerPusher($receiver_id, $message) {
 }
 
 //check
-
 //история на чата;
 if(isset($_POST['chatHistorySearch'])) {
     echo chatHistory('chat','chat', $sender_id, $_POST['receiver_id'], $_POST['keyWord']);
 }
 //Зареди чат от даден период на хронологията
 elseif(isset($_POST['chatSelectedHistory'])) {
-    echo displayLastRecordInChat("chat", "chat", $sender_id, $_POST['receiver_id'], $_POST['chatId'], 'ASC', 4);
+    echo displayLastRecordInChat("chat", "chat", $sender_id, $_POST['receiver_id'], $_POST['chatId'], 'ASC', 4, $_POST['operator']);
 }
 //въвеждане на съобщение в БД
 elseif(isset($_POST["processMessage"])) {
@@ -239,13 +253,13 @@ elseif(isset($_POST['friendOrStranger'])) {
 }
 //визуализиране на съобщенията
 elseif(isset($_POST['chatDisplay'])) {
-    echo displayLastRecordInChat("chat", "chat", $sender_id, $_POST['receiver_id'], $_POST['last'], 'DESC', $_POST['limitRows']);
+    echo displayLastRecordInChat("chat", "chat", $sender_id, $_POST['receiver_id'], $_POST['last'], 'DESC', $_POST['limitRows'], '>=');
 }
 //Динамично зареждане на съобщенията;
 elseif(isset($_POST['dynamicChatCheck'])) {
-    echo displayLastRecordInChat("chat", "chat", $sender_id, $_POST['receiver_id'], $_POST['last'], 'ASC', 10);
+    echo displayLastRecordInChat("chat", "chat", $sender_id, $_POST['receiver_id'], $_POST['last'], 'ASC', 10, '>');
 }
 //Списък на потребителите
 elseif(isset($_POST['userList'])) {
-    echo userListDisplay('chat', 'chat', $sender_id);
+    echo userListDisplay('chat', 'chat', $sender_id, $_POST['friends']);
 }

@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cd1c7d5-bba3-4bc2-91aa-4c2f4cc1c27c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Templates/TPLadminPanel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSS/colors/colorCombo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pusher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/Connect.class.php" afterPath="$PROJECT_DIR$/Classes/Connect.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/TPLchat.class.php" afterPath="$PROJECT_DIR$/Templates/TPLchat.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/TPLindex.class.php" afterPath="$PROJECT_DIR$/Templates/TPLindex.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/TPLlogin.class.php" afterPath="$PROJECT_DIR$/Templates/TPLlogin.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/TPLregistration.class.php" afterPath="$PROJECT_DIR$/Templates/TPLregistration.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/Template.class.php" afterPath="$PROJECT_DIR$/Classes/Template.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/processingAJAX.php" afterPath="$PROJECT_DIR$/Templates/processingAJAX.php" />
@@ -45,8 +39,8 @@
       <file leaf-file-name="Template.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/Template.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.807692">
-              <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
+            <state vertical-scroll-proportion="-11.692307">
+              <caret line="154" column="19" selection-start-line="154" selection-start-column="19" selection-end-line="154" selection-end-column="42" />
               <folding>
                 <element signature="e#6#97#0#PHP" expanded="true" />
                 <element signature="n#getParam#0;n#Template#0;n#!!top" expanded="false" />
@@ -55,14 +49,14 @@
                 <element signature="n#implodeInsertedData#0;n#Template#0;n#!!top" expanded="false" />
                 <element signature="n#update#0;n#Template#0;n#!!top" expanded="false" />
                 <element signature="n#Title#0;n#Template#0;n#!!top" expanded="false" />
-                <marker date="1458408997514" expanded="true" signature="583:639" placeholder="SELECT nickN..." />
-                <marker date="1458408997514" expanded="true" signature="583:645" placeholder="SELECT * FRO..." />
-                <marker date="1458408997514" expanded="true" signature="583:646" placeholder="SELECT * FRO..." />
-                <marker date="1458408997514" expanded="true" signature="1111:1223" placeholder="SELECT * FRO..." />
-                <marker date="1458408997514" expanded="true" signature="1824:1940" placeholder="INSERT INTO ..." />
-                <marker date="1458408997514" expanded="true" signature="2937:2980" placeholder="UPDATE MyGue..." />
-                <marker date="1458408997514" expanded="true" signature="3219:3294" placeholder="DELETE FROM ..." />
-                <marker date="1458408997514" expanded="true" signature="3219:3361" placeholder="DELETE FROM ..." />
+                <marker date="1458756616325" expanded="true" signature="583:639" placeholder="SELECT nickN..." />
+                <marker date="1458756616325" expanded="true" signature="583:645" placeholder="SELECT * FRO..." />
+                <marker date="1458756616325" expanded="true" signature="583:646" placeholder="SELECT * FRO..." />
+                <marker date="1458756616325" expanded="true" signature="1111:1223" placeholder="SELECT * FRO..." />
+                <marker date="1458756616325" expanded="true" signature="1824:1940" placeholder="INSERT INTO ..." />
+                <marker date="1458756616325" expanded="true" signature="2937:2980" placeholder="UPDATE MyGue..." />
+                <marker date="1458756616325" expanded="true" signature="3219:3294" placeholder="DELETE FROM ..." />
+                <marker date="1458756616325" expanded="true" signature="3219:3361" placeholder="DELETE FROM ..." />
               </folding>
             </state>
           </provider>
@@ -78,49 +72,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TPLchat.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TPLchat.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Templates/TPLchat.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4">
-              <caret line="273" column="51" selection-start-line="273" selection-start-column="51" selection-end-line="273" selection-end-column="51" />
+            <state vertical-scroll-proportion="-2.8363636">
+              <caret line="468" column="23" selection-start-line="468" selection-start-column="23" selection-end-line="468" selection-end-column="23" />
               <folding>
                 <element signature="e#6#97#0#PHP" expanded="true" />
                 <element signature="n#displayChat#0;n#TPLchat#0;n#!!top" expanded="false" />
                 <element signature="n#displayFavorites#0;n#TPLchat#0;n#!!top" expanded="false" />
                 <element signature="n#Title#0;n#TPLchat#0;n#!!top" expanded="false" />
-                <element signature="e#4088#4108#0#HTML" expanded="true" />
-                <element signature="e#8848#9966#0#HTML" expanded="false" />
-                <element signature="e#10066#10326#0#HTML" expanded="false" />
-                <element signature="e#19179#19657#0#HTML" expanded="false" />
-                <element signature="e#19765#19918#0#HTML" expanded="false" />
-                <element signature="e#20079#20200#0#HTML" expanded="false" />
-                <element signature="e#21537#21657#0#HTML" expanded="false" />
-                <element signature="n#returnLastId#0;n#!!block;n#Body#0;n#TPLchat#0;n#!!top" expanded="false" />
-                <element signature="e#22122#23084#0#HTML" expanded="false" />
-                <element signature="e#23166#24561#0#HTML" expanded="false" />
-                <element signature="e#24637#25783#0#HTML" expanded="false" />
-                <element signature="e#26290#26457#0#HTML" expanded="false" />
-                <element signature="e#26570#27612#0#HTML" expanded="false" />
-                <element signature="e#29074#30430#0#HTML" expanded="false" />
-                <element signature="e#30554#32223#0#HTML" expanded="false" />
-                <element signature="e#31549#31863#0#HTML" expanded="false" />
-                <marker date="1458584778260" expanded="true" signature="933:1044" placeholder="SELECT * FRO..." />
-                <marker date="1458584778260" expanded="true" signature="1381:1790" placeholder="SELECT * FRO..." />
-                <marker date="1458584778260" expanded="true" signature="2121:2378" placeholder="SELECT * FRO..." />
-                <marker date="1458584778260" expanded="true" signature="17006:19920" placeholder="..." />
-                <marker date="1458584778260" expanded="true" signature="17913:17924" placeholder="..." />
-                <marker date="1458584778260" expanded="true" signature="21857:21893" placeholder="SELECT id FR..chat..." />
-                <marker date="1458584778260" expanded="true" signature="32022:32033" placeholder="..." />
+                <element signature="e#11663#11684#0#HTML" expanded="true" />
+                <marker date="1458758513993" expanded="true" signature="933:1044" placeholder="SELECT * FRO..." />
+                <marker date="1458758513993" expanded="true" signature="1381:1790" placeholder="SELECT * FRO..." />
+                <marker date="1458758513993" expanded="true" signature="2121:2378" placeholder="SELECT * FRO..." />
+                <marker date="1458758513993" expanded="true" signature="11786:12653" placeholder="..." />
+                <marker date="1458758513993" expanded="true" signature="12547:12558" placeholder="..." />
+                <marker date="1458758513993" expanded="true" signature="12854:12890" placeholder="SELECT id FR..chat..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="processingAJAX.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-63.724136">
+              <caret line="292" column="0" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#48#0" expanded="false" />
+                <element signature="n#!!block;n#chatDivStyle#0" expanded="false" />
+                <element signature="n#!!block;n#usersDivStyle#0" expanded="false" />
+                <element signature="n#!!block;n#ajaxUserList#0" expanded="false" />
+                <element signature="n#!!block;n#userInformation#0" expanded="false" />
+                <element signature="n#!!block;n#userSelect#0" expanded="false" />
+                <element signature="n#!!block;n#loadMoreFromChat#0" expanded="false" />
+                <element signature="n#!!block;n#showMoreChatDown#0" expanded="false" />
+                <element signature="e#7638#7711#0" expanded="false" />
+                <element signature="e#8846#9113#0" expanded="false" />
+                <element signature="e#8951#8994#0" expanded="false" />
+                <element signature="e#9199#9320#0" expanded="false" />
+                <element signature="e#9690#9827#0" expanded="false" />
+                <element signature="e#11468#11578#0" expanded="false" />
+                <element signature="e#12034#12598#0" expanded="false" />
+                <element signature="e#12684#12827#0" expanded="false" />
+                <element signature="e#12891#13765#0" expanded="false" />
+                <element signature="e#18242#18316#0" expanded="false" />
+                <element signature="e#18376#18562#0" expanded="false" />
+                <marker date="1458758943036" expanded="true" signature="11806:11817" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="processingAJAX.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Templates/processingAJAX.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.346154">
-              <caret line="151" column="54" selection-start-line="151" selection-start-column="54" selection-end-line="151" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.3207547">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="n#loadMessages#0;n#!!top" expanded="false" />
                 <element signature="n#displayLastRecordInChat#0;n#!!top" expanded="false" />
@@ -128,24 +137,28 @@
                 <element signature="n#search#0;n#!!top" expanded="false" />
                 <element signature="n#selectedUser#0;n#!!top" expanded="false" />
                 <element signature="n#friendOrStranger#0;n#!!top" expanded="false" />
+                <element signature="n#userListDisplay#0;n#!!top" expanded="false" />
                 <element signature="n#chatHistory#0;n#!!top" expanded="false" />
                 <element signature="n#triggerPusher#0;n#!!top" expanded="false" />
-                <marker date="1458581829362" expanded="false" signature="1022:2482" placeholder="SELECT chat...." />
-                <marker date="1458581829362" expanded="true" signature="1022:2650" placeholder="SELECT chat...." />
-                <marker date="1458581829362" expanded="true" signature="1341:1396" placeholder="SELECT id..." />
-                <marker date="1458581829362" expanded="true" signature="1341:1708" placeholder="SELECT id FR..chat..." />
-                <marker date="1458581829362" expanded="true" signature="2966:3211" placeholder="SELECT id FR..." />
-                <marker date="1458581829362" expanded="true" signature="2966:3282" placeholder="SELECT id, s..." />
-                <marker date="1458581829362" expanded="true" signature="2966:3339" placeholder="SELECT MAX(i..." />
-                <marker date="1458581829362" expanded="true" signature="3587:3668" placeholder="SELECT * FRO..." />
-                <marker date="1458581829362" expanded="true" signature="3587:3674" placeholder="SELECT FROM ..." />
-                <marker date="1458581829362" expanded="true" signature="3587:3736" placeholder="SELECT * FRO..." />
-                <marker date="1458581829362" expanded="true" signature="3587:3737" placeholder="SELECT nickN..." />
-                <marker date="1458581829362" expanded="true" signature="3587:3752" placeholder="SELECT nickN..." />
-                <marker date="1458581829362" expanded="true" signature="4503:5041" placeholder="SELECT u.nic..users..." />
-                <marker date="1458581829362" expanded="true" signature="5964:6244" placeholder="SELECT u.id ..users..." />
-                <marker date="1458581829362" expanded="true" signature="5964:6254" placeholder="SELECT u.id ..users..." />
-                <marker date="1458581829362" expanded="true" signature="6539:7280" placeholder="SELECT id, n..." />
+                <marker date="1458759322815" expanded="true" signature="1033:2493" placeholder="SELECT chat...." />
+                <marker date="1458759322815" expanded="true" signature="1033:2668" placeholder="SELECT chat...." />
+                <marker date="1458759322815" expanded="true" signature="1352:1407" placeholder="SELECT id..." />
+                <marker date="1458759322815" expanded="true" signature="1352:1719" placeholder="SELECT id FR..chat..." />
+                <marker date="1458759322815" expanded="true" signature="2984:3224" placeholder="SELECT id FR..." />
+                <marker date="1458759322815" expanded="true" signature="2984:3295" placeholder="SELECT id, s..." />
+                <marker date="1458759322815" expanded="true" signature="2984:3352" placeholder="SELECT MAX(i..." />
+                <marker date="1458759322815" expanded="true" signature="3600:3681" placeholder="SELECT * FRO..." />
+                <marker date="1458759322815" expanded="true" signature="3600:3687" placeholder="SELECT FROM ..." />
+                <marker date="1458759322815" expanded="true" signature="3600:3749" placeholder="SELECT * FRO..." />
+                <marker date="1458759322815" expanded="true" signature="3600:3750" placeholder="SELECT nickN..." />
+                <marker date="1458759322815" expanded="true" signature="3600:3765" placeholder="SELECT nickN..." />
+                <marker date="1458759322815" expanded="true" signature="4516:5054" placeholder="SELECT u.nic..users..." />
+                <marker date="1458759322815" expanded="true" signature="5984:6210" placeholder="SELECT u.id,..users..." />
+                <marker date="1458759322815" expanded="true" signature="6232:6374" placeholder="SELECT * FRO..users..." />
+                <marker date="1458759322815" expanded="true" signature="6238:6374" placeholder="select * fro..users..." />
+                <marker date="1458759322815" expanded="true" signature="6340:6373" placeholder="SELECT recei..favorites..." />
+                <marker date="1458759322815" expanded="true" signature="6346:6373" placeholder="select recei..favorites..." />
+                <marker date="1458759322815" expanded="true" signature="6712:7453" placeholder="SELECT id, n..." />
               </folding>
             </state>
           </provider>
@@ -154,8 +167,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSS/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.793103">
-              <caret line="229" column="23" selection-start-line="229" selection-start-column="23" selection-end-line="229" selection-end-column="23" />
+            <state vertical-scroll-proportion="-14.586206">
+              <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -167,6 +180,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -190,12 +204,13 @@
         <option value="$PROJECT_DIR$/CSS/colors/colorCombo.css" />
         <option value="$PROJECT_DIR$/Classes/Connect.class.php" />
         <option value="$PROJECT_DIR$/pusher-websocket/pusher.php" />
-        <option value="$PROJECT_DIR$/Classes/Template.class.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/pusher.php" />
-        <option value="$PROJECT_DIR$/Templates/processingAJAX.php" />
         <option value="$PROJECT_DIR$/CSS/styles.css" />
+        <option value="$PROJECT_DIR$/Classes/Template.class.php" />
         <option value="$PROJECT_DIR$/Templates/TPLchat.class.php" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/Templates/processingAJAX.php" />
       </list>
     </option>
   </component>
@@ -287,6 +302,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineChat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineChat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -375,7 +404,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.295764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22390318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -437,71 +466,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Classes/Template.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
-          <folding>
-            <element signature="e#6#97#0#PHP" expanded="true" />
-            <element signature="n#getParam#0;n#Template#0;n#!!top" expanded="false" />
-            <element signature="n#setParams#0;n#Template#0;n#!!top" expanded="false" />
-            <element signature="n#select#0;n#Template#0;n#!!top" expanded="false" />
-            <element signature="n#implodeInsertedData#0;n#Template#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#Template#0;n#!!top" expanded="false" />
-            <element signature="n#Title#0;n#Template#0;n#!!top" expanded="false" />
-            <marker date="1458408997514" expanded="true" signature="583:639" placeholder="SELECT nickN..." />
-            <marker date="1458408997514" expanded="true" signature="583:645" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="583:646" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="1111:1223" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="1824:1940" placeholder="INSERT INTO ..." />
-            <marker date="1458408997514" expanded="true" signature="2937:2980" placeholder="UPDATE MyGue..." />
-            <marker date="1458408997514" expanded="true" signature="3219:3294" placeholder="DELETE FROM ..." />
-            <marker date="1458408997514" expanded="true" signature="3219:3361" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/TPLchat.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#97#0#PHP" expanded="true" />
-            <element signature="n#displayChat#0;n#TPLchat#0;n#!!top" expanded="false" />
-            <element signature="n#displayFavorites#0;n#TPLchat#0;n#!!top" expanded="false" />
-            <element signature="n#Title#0;n#TPLchat#0;n#!!top" expanded="false" />
-            <element signature="e#4088#4108#0#HTML" expanded="true" />
-            <element signature="e#8848#9966#0#HTML" expanded="false" />
-            <element signature="e#10066#10326#0#HTML" expanded="false" />
-            <element signature="e#19179#19657#0#HTML" expanded="false" />
-            <element signature="e#19765#19918#0#HTML" expanded="false" />
-            <element signature="e#20079#20200#0#HTML" expanded="false" />
-            <element signature="e#21537#21657#0#HTML" expanded="false" />
-            <element signature="n#returnLastId#0;n#!!block;n#Body#0;n#TPLchat#0;n#!!top" expanded="false" />
-            <element signature="e#22122#23084#0#HTML" expanded="false" />
-            <element signature="e#23166#24561#0#HTML" expanded="false" />
-            <element signature="e#24637#25783#0#HTML" expanded="false" />
-            <element signature="e#26290#26457#0#HTML" expanded="false" />
-            <element signature="e#26570#27612#0#HTML" expanded="false" />
-            <element signature="e#29074#30430#0#HTML" expanded="false" />
-            <element signature="e#30554#32223#0#HTML" expanded="false" />
-            <element signature="e#31549#31863#0#HTML" expanded="false" />
-            <marker date="1458584778260" expanded="true" signature="933:1044" placeholder="SELECT * FRO..." />
-            <marker date="1458584778260" expanded="true" signature="1381:1790" placeholder="SELECT * FRO..." />
-            <marker date="1458584778260" expanded="true" signature="2121:2378" placeholder="SELECT * FRO..." />
-            <marker date="1458584778260" expanded="true" signature="17006:19920" placeholder="..." />
-            <marker date="1458584778260" expanded="true" signature="17913:17924" placeholder="..." />
-            <marker date="1458584778260" expanded="true" signature="21857:21893" placeholder="SELECT id FR..chat..." />
-            <marker date="1458584778260" expanded="true" signature="32022:32033" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Templates/TPLlogin.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -535,14 +504,14 @@
             <element signature="n#implodeInsertedData#0;n#Template#0;n#!!top" expanded="false" />
             <element signature="n#update#0;n#Template#0;n#!!top" expanded="false" />
             <element signature="n#Title#0;n#Template#0;n#!!top" expanded="false" />
-            <marker date="1458408997514" expanded="true" signature="583:639" placeholder="SELECT nickN..." />
-            <marker date="1458408997514" expanded="true" signature="583:645" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="583:646" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="1111:1223" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="1824:1940" placeholder="INSERT INTO ..." />
-            <marker date="1458408997514" expanded="true" signature="2937:2980" placeholder="UPDATE MyGue..." />
-            <marker date="1458408997514" expanded="true" signature="3219:3294" placeholder="DELETE FROM ..." />
-            <marker date="1458408997514" expanded="true" signature="3219:3361" placeholder="DELETE FROM ..." />
+            <marker date="1458756616325" expanded="true" signature="583:639" placeholder="SELECT nickN..." />
+            <marker date="1458756616325" expanded="true" signature="583:645" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="583:646" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="1111:1223" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="1824:1940" placeholder="INSERT INTO ..." />
+            <marker date="1458756616325" expanded="true" signature="2937:2980" placeholder="UPDATE MyGue..." />
+            <marker date="1458756616325" expanded="true" signature="3219:3294" placeholder="DELETE FROM ..." />
+            <marker date="1458756616325" expanded="true" signature="3219:3361" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -556,29 +525,13 @@
             <element signature="n#displayChat#0;n#TPLchat#0;n#!!top" expanded="false" />
             <element signature="n#displayFavorites#0;n#TPLchat#0;n#!!top" expanded="false" />
             <element signature="n#Title#0;n#TPLchat#0;n#!!top" expanded="false" />
-            <element signature="e#4088#4108#0#HTML" expanded="true" />
-            <element signature="e#8848#9966#0#HTML" expanded="false" />
-            <element signature="e#10066#10326#0#HTML" expanded="false" />
-            <element signature="e#19179#19657#0#HTML" expanded="false" />
-            <element signature="e#19765#19918#0#HTML" expanded="false" />
-            <element signature="e#20079#20200#0#HTML" expanded="false" />
-            <element signature="e#21537#21657#0#HTML" expanded="false" />
-            <element signature="n#returnLastId#0;n#!!block;n#Body#0;n#TPLchat#0;n#!!top" expanded="false" />
-            <element signature="e#22122#23084#0#HTML" expanded="false" />
-            <element signature="e#23166#24561#0#HTML" expanded="false" />
-            <element signature="e#24637#25783#0#HTML" expanded="false" />
-            <element signature="e#26290#26457#0#HTML" expanded="false" />
-            <element signature="e#26570#27612#0#HTML" expanded="false" />
-            <element signature="e#29074#30430#0#HTML" expanded="false" />
-            <element signature="e#30554#32223#0#HTML" expanded="false" />
-            <element signature="e#31549#31863#0#HTML" expanded="false" />
-            <marker date="1458584778260" expanded="true" signature="933:1044" placeholder="SELECT * FRO..." />
-            <marker date="1458584778260" expanded="true" signature="1381:1790" placeholder="SELECT * FRO..." />
-            <marker date="1458584778260" expanded="true" signature="2121:2378" placeholder="SELECT * FRO..." />
-            <marker date="1458584778260" expanded="true" signature="17006:19920" placeholder="..." />
-            <marker date="1458584778260" expanded="true" signature="17913:17924" placeholder="..." />
-            <marker date="1458584778260" expanded="true" signature="21857:21893" placeholder="SELECT id FR..chat..." />
-            <marker date="1458584778260" expanded="true" signature="32022:32033" placeholder="..." />
+            <element signature="e#11663#11684#0#HTML" expanded="true" />
+            <marker date="1458758513993" expanded="true" signature="933:1044" placeholder="SELECT * FRO..." />
+            <marker date="1458758513993" expanded="true" signature="1381:1790" placeholder="SELECT * FRO..." />
+            <marker date="1458758513993" expanded="true" signature="2121:2378" placeholder="SELECT * FRO..." />
+            <marker date="1458758513993" expanded="true" signature="11786:12653" placeholder="..." />
+            <marker date="1458758513993" expanded="true" signature="12547:12558" placeholder="..." />
+            <marker date="1458758513993" expanded="true" signature="12854:12890" placeholder="SELECT id FR..chat..." />
           </folding>
         </state>
       </provider>
@@ -620,29 +573,13 @@
             <element signature="n#displayChat#0;n#TPLchat#0;n#!!top" expanded="false" />
             <element signature="n#displayFavorites#0;n#TPLchat#0;n#!!top" expanded="false" />
             <element signature="n#Title#0;n#TPLchat#0;n#!!top" expanded="false" />
-            <element signature="e#4088#4108#0#HTML" expanded="true" />
-            <element signature="e#8848#9966#0#HTML" expanded="false" />
-            <element signature="e#10066#10326#0#HTML" expanded="false" />
-            <element signature="e#19179#19657#0#HTML" expanded="false" />
-            <element signature="e#19765#19918#0#HTML" expanded="false" />
-            <element signature="e#20079#20200#0#HTML" expanded="false" />
-            <element signature="e#21537#21657#0#HTML" expanded="false" />
-            <element signature="n#returnLastId#0;n#!!block;n#Body#0;n#TPLchat#0;n#!!top" expanded="false" />
-            <element signature="e#22122#23084#0#HTML" expanded="false" />
-            <element signature="e#23166#24561#0#HTML" expanded="false" />
-            <element signature="e#24637#25783#0#HTML" expanded="false" />
-            <element signature="e#26290#26457#0#HTML" expanded="false" />
-            <element signature="e#26570#27612#0#HTML" expanded="false" />
-            <element signature="e#29074#30430#0#HTML" expanded="false" />
-            <element signature="e#30554#32223#0#HTML" expanded="false" />
-            <element signature="e#31549#31863#0#HTML" expanded="false" />
-            <marker date="1458584778260" expanded="true" signature="933:1044" placeholder="SELECT * FRO..." />
-            <marker date="1458584778260" expanded="true" signature="1381:1790" placeholder="SELECT * FRO..." />
-            <marker date="1458584778260" expanded="true" signature="2121:2378" placeholder="SELECT * FRO..." />
-            <marker date="1458584778260" expanded="true" signature="17006:19920" placeholder="..." />
-            <marker date="1458584778260" expanded="true" signature="17913:17924" placeholder="..." />
-            <marker date="1458584778260" expanded="true" signature="21857:21893" placeholder="SELECT id FR..chat..." />
-            <marker date="1458584778260" expanded="true" signature="32022:32033" placeholder="..." />
+            <element signature="e#11663#11684#0#HTML" expanded="true" />
+            <marker date="1458758513993" expanded="true" signature="933:1044" placeholder="SELECT * FRO..." />
+            <marker date="1458758513993" expanded="true" signature="1381:1790" placeholder="SELECT * FRO..." />
+            <marker date="1458758513993" expanded="true" signature="2121:2378" placeholder="SELECT * FRO..." />
+            <marker date="1458758513993" expanded="true" signature="11786:12653" placeholder="..." />
+            <marker date="1458758513993" expanded="true" signature="12547:12558" placeholder="..." />
+            <marker date="1458758513993" expanded="true" signature="12854:12890" placeholder="SELECT id FR..chat..." />
           </folding>
         </state>
       </provider>
@@ -673,14 +610,14 @@
             <element signature="n#implodeInsertedData#0;n#Template#0;n#!!top" expanded="false" />
             <element signature="n#update#0;n#Template#0;n#!!top" expanded="false" />
             <element signature="n#Title#0;n#Template#0;n#!!top" expanded="false" />
-            <marker date="1458408997514" expanded="true" signature="583:639" placeholder="SELECT nickN..." />
-            <marker date="1458408997514" expanded="true" signature="583:645" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="583:646" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="1111:1223" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="1824:1940" placeholder="INSERT INTO ..." />
-            <marker date="1458408997514" expanded="true" signature="2937:2980" placeholder="UPDATE MyGue..." />
-            <marker date="1458408997514" expanded="true" signature="3219:3294" placeholder="DELETE FROM ..." />
-            <marker date="1458408997514" expanded="true" signature="3219:3361" placeholder="DELETE FROM ..." />
+            <marker date="1458756616325" expanded="true" signature="583:639" placeholder="SELECT nickN..." />
+            <marker date="1458756616325" expanded="true" signature="583:645" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="583:646" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="1111:1223" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="1824:1940" placeholder="INSERT INTO ..." />
+            <marker date="1458756616325" expanded="true" signature="2937:2980" placeholder="UPDATE MyGue..." />
+            <marker date="1458756616325" expanded="true" signature="3219:3294" placeholder="DELETE FROM ..." />
+            <marker date="1458756616325" expanded="true" signature="3219:3361" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -739,14 +676,14 @@
             <element signature="n#implodeInsertedData#0;n#Template#0;n#!!top" expanded="false" />
             <element signature="n#update#0;n#Template#0;n#!!top" expanded="false" />
             <element signature="n#Title#0;n#Template#0;n#!!top" expanded="false" />
-            <marker date="1458408997514" expanded="true" signature="583:639" placeholder="SELECT nickN..." />
-            <marker date="1458408997514" expanded="true" signature="583:645" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="583:646" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="1111:1223" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="1824:1940" placeholder="INSERT INTO ..." />
-            <marker date="1458408997514" expanded="true" signature="2937:2980" placeholder="UPDATE MyGue..." />
-            <marker date="1458408997514" expanded="true" signature="3219:3294" placeholder="DELETE FROM ..." />
-            <marker date="1458408997514" expanded="true" signature="3219:3361" placeholder="DELETE FROM ..." />
+            <marker date="1458756616325" expanded="true" signature="583:639" placeholder="SELECT nickN..." />
+            <marker date="1458756616325" expanded="true" signature="583:645" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="583:646" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="1111:1223" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="1824:1940" placeholder="INSERT INTO ..." />
+            <marker date="1458756616325" expanded="true" signature="2937:2980" placeholder="UPDATE MyGue..." />
+            <marker date="1458756616325" expanded="true" signature="3219:3294" placeholder="DELETE FROM ..." />
+            <marker date="1458756616325" expanded="true" signature="3219:3361" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -791,14 +728,14 @@
             <element signature="n#implodeInsertedData#0;n#Template#0;n#!!top" expanded="false" />
             <element signature="n#update#0;n#Template#0;n#!!top" expanded="false" />
             <element signature="n#Title#0;n#Template#0;n#!!top" expanded="false" />
-            <marker date="1458408997514" expanded="true" signature="583:639" placeholder="SELECT nickN..." />
-            <marker date="1458408997514" expanded="true" signature="583:645" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="583:646" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="1111:1223" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="1824:1940" placeholder="INSERT INTO ..." />
-            <marker date="1458408997514" expanded="true" signature="2937:2980" placeholder="UPDATE MyGue..." />
-            <marker date="1458408997514" expanded="true" signature="3219:3294" placeholder="DELETE FROM ..." />
-            <marker date="1458408997514" expanded="true" signature="3219:3361" placeholder="DELETE FROM ..." />
+            <marker date="1458756616325" expanded="true" signature="583:639" placeholder="SELECT nickN..." />
+            <marker date="1458756616325" expanded="true" signature="583:645" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="583:646" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="1111:1223" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="1824:1940" placeholder="INSERT INTO ..." />
+            <marker date="1458756616325" expanded="true" signature="2937:2980" placeholder="UPDATE MyGue..." />
+            <marker date="1458756616325" expanded="true" signature="3219:3294" placeholder="DELETE FROM ..." />
+            <marker date="1458756616325" expanded="true" signature="3219:3361" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -843,14 +780,14 @@
             <element signature="n#implodeInsertedData#0;n#Template#0;n#!!top" expanded="false" />
             <element signature="n#update#0;n#Template#0;n#!!top" expanded="false" />
             <element signature="n#Title#0;n#Template#0;n#!!top" expanded="false" />
-            <marker date="1458408997514" expanded="true" signature="583:639" placeholder="SELECT nickN..." />
-            <marker date="1458408997514" expanded="true" signature="583:645" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="583:646" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="1111:1223" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="1824:1940" placeholder="INSERT INTO ..." />
-            <marker date="1458408997514" expanded="true" signature="2937:2980" placeholder="UPDATE MyGue..." />
-            <marker date="1458408997514" expanded="true" signature="3219:3294" placeholder="DELETE FROM ..." />
-            <marker date="1458408997514" expanded="true" signature="3219:3361" placeholder="DELETE FROM ..." />
+            <marker date="1458756616325" expanded="true" signature="583:639" placeholder="SELECT nickN..." />
+            <marker date="1458756616325" expanded="true" signature="583:645" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="583:646" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="1111:1223" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="1824:1940" placeholder="INSERT INTO ..." />
+            <marker date="1458756616325" expanded="true" signature="2937:2980" placeholder="UPDATE MyGue..." />
+            <marker date="1458756616325" expanded="true" signature="3219:3294" placeholder="DELETE FROM ..." />
+            <marker date="1458756616325" expanded="true" signature="3219:3361" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -955,64 +892,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/emoticons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Template.class.php">
+    <entry file="file://$PROJECT_DIR$/CSS/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.807692">
-          <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#97#0#PHP" expanded="true" />
-            <element signature="n#getParam#0;n#Template#0;n#!!top" expanded="false" />
-            <element signature="n#setParams#0;n#Template#0;n#!!top" expanded="false" />
-            <element signature="n#select#0;n#Template#0;n#!!top" expanded="false" />
-            <element signature="n#implodeInsertedData#0;n#Template#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#Template#0;n#!!top" expanded="false" />
-            <element signature="n#Title#0;n#Template#0;n#!!top" expanded="false" />
-            <marker date="1458408997514" expanded="true" signature="583:639" placeholder="SELECT nickN..." />
-            <marker date="1458408997514" expanded="true" signature="583:645" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="583:646" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="1111:1223" placeholder="SELECT * FRO..." />
-            <marker date="1458408997514" expanded="true" signature="1824:1940" placeholder="INSERT INTO ..." />
-            <marker date="1458408997514" expanded="true" signature="2937:2980" placeholder="UPDATE MyGue..." />
-            <marker date="1458408997514" expanded="true" signature="3219:3294" placeholder="DELETE FROM ..." />
-            <marker date="1458408997514" expanded="true" signature="3219:3361" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/processingAJAX.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.346154">
-          <caret line="151" column="54" selection-start-line="151" selection-start-column="54" selection-end-line="151" selection-end-column="54" />
-          <folding>
-            <element signature="n#loadMessages#0;n#!!top" expanded="false" />
-            <element signature="n#displayLastRecordInChat#0;n#!!top" expanded="false" />
-            <element signature="n#countUnreadMessages#0;n#!!top" expanded="false" />
-            <element signature="n#search#0;n#!!top" expanded="false" />
-            <element signature="n#selectedUser#0;n#!!top" expanded="false" />
-            <element signature="n#friendOrStranger#0;n#!!top" expanded="false" />
-            <element signature="n#chatHistory#0;n#!!top" expanded="false" />
-            <element signature="n#triggerPusher#0;n#!!top" expanded="false" />
-            <marker date="1458581829362" expanded="false" signature="1022:2482" placeholder="SELECT chat...." />
-            <marker date="1458581829362" expanded="true" signature="1022:2650" placeholder="SELECT chat...." />
-            <marker date="1458581829362" expanded="true" signature="1341:1396" placeholder="SELECT id..." />
-            <marker date="1458581829362" expanded="true" signature="1341:1708" placeholder="SELECT id FR..chat..." />
-            <marker date="1458581829362" expanded="true" signature="2966:3211" placeholder="SELECT id FR..." />
-            <marker date="1458581829362" expanded="true" signature="2966:3282" placeholder="SELECT id, s..." />
-            <marker date="1458581829362" expanded="true" signature="2966:3339" placeholder="SELECT MAX(i..." />
-            <marker date="1458581829362" expanded="true" signature="3587:3668" placeholder="SELECT * FRO..." />
-            <marker date="1458581829362" expanded="true" signature="3587:3674" placeholder="SELECT FROM ..." />
-            <marker date="1458581829362" expanded="true" signature="3587:3736" placeholder="SELECT * FRO..." />
-            <marker date="1458581829362" expanded="true" signature="3587:3737" placeholder="SELECT nickN..." />
-            <marker date="1458581829362" expanded="true" signature="3587:3752" placeholder="SELECT nickN..." />
-            <marker date="1458581829362" expanded="true" signature="4503:5041" placeholder="SELECT u.nic..users..." />
-            <marker date="1458581829362" expanded="true" signature="5964:6244" placeholder="SELECT u.id ..users..." />
-            <marker date="1458581829362" expanded="true" signature="5964:6254" placeholder="SELECT u.id ..users..." />
-            <marker date="1458581829362" expanded="true" signature="6539:7280" placeholder="SELECT id, n..." />
-          </folding>
+        <state vertical-scroll-proportion="-14.586206">
+          <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1024,46 +919,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/styles.css">
+    <entry file="file://$PROJECT_DIR$/Classes/Template.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.793103">
-          <caret line="229" column="23" selection-start-line="229" selection-start-column="23" selection-end-line="229" selection-end-column="23" />
-          <folding />
+        <state vertical-scroll-proportion="-11.692307">
+          <caret line="154" column="19" selection-start-line="154" selection-start-column="19" selection-end-line="154" selection-end-column="42" />
+          <folding>
+            <element signature="e#6#97#0#PHP" expanded="true" />
+            <element signature="n#getParam#0;n#Template#0;n#!!top" expanded="false" />
+            <element signature="n#setParams#0;n#Template#0;n#!!top" expanded="false" />
+            <element signature="n#select#0;n#Template#0;n#!!top" expanded="false" />
+            <element signature="n#implodeInsertedData#0;n#Template#0;n#!!top" expanded="false" />
+            <element signature="n#update#0;n#Template#0;n#!!top" expanded="false" />
+            <element signature="n#Title#0;n#Template#0;n#!!top" expanded="false" />
+            <marker date="1458756616325" expanded="true" signature="583:639" placeholder="SELECT nickN..." />
+            <marker date="1458756616325" expanded="true" signature="583:645" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="583:646" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="1111:1223" placeholder="SELECT * FRO..." />
+            <marker date="1458756616325" expanded="true" signature="1824:1940" placeholder="INSERT INTO ..." />
+            <marker date="1458756616325" expanded="true" signature="2937:2980" placeholder="UPDATE MyGue..." />
+            <marker date="1458756616325" expanded="true" signature="3219:3294" placeholder="DELETE FROM ..." />
+            <marker date="1458756616325" expanded="true" signature="3219:3361" placeholder="DELETE FROM ..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Templates/TPLchat.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4">
-          <caret line="273" column="51" selection-start-line="273" selection-start-column="51" selection-end-line="273" selection-end-column="51" />
+        <state vertical-scroll-proportion="-2.8363636">
+          <caret line="468" column="23" selection-start-line="468" selection-start-column="23" selection-end-line="468" selection-end-column="23" />
           <folding>
             <element signature="e#6#97#0#PHP" expanded="true" />
             <element signature="n#displayChat#0;n#TPLchat#0;n#!!top" expanded="false" />
             <element signature="n#displayFavorites#0;n#TPLchat#0;n#!!top" expanded="false" />
             <element signature="n#Title#0;n#TPLchat#0;n#!!top" expanded="false" />
-            <element signature="e#4088#4108#0#HTML" expanded="true" />
-            <element signature="e#8848#9966#0#HTML" expanded="false" />
-            <element signature="e#10066#10326#0#HTML" expanded="false" />
-            <element signature="e#19179#19657#0#HTML" expanded="false" />
-            <element signature="e#19765#19918#0#HTML" expanded="false" />
-            <element signature="e#20079#20200#0#HTML" expanded="false" />
-            <element signature="e#21537#21657#0#HTML" expanded="false" />
-            <element signature="n#returnLastId#0;n#!!block;n#Body#0;n#TPLchat#0;n#!!top" expanded="false" />
-            <element signature="e#22122#23084#0#HTML" expanded="false" />
-            <element signature="e#23166#24561#0#HTML" expanded="false" />
-            <element signature="e#24637#25783#0#HTML" expanded="false" />
-            <element signature="e#26290#26457#0#HTML" expanded="false" />
-            <element signature="e#26570#27612#0#HTML" expanded="false" />
-            <element signature="e#29074#30430#0#HTML" expanded="false" />
-            <element signature="e#30554#32223#0#HTML" expanded="false" />
-            <element signature="e#31549#31863#0#HTML" expanded="false" />
-            <marker date="1458584778260" expanded="true" signature="933:1044" placeholder="SELECT * FRO..." />
-            <marker date="1458584778260" expanded="true" signature="1381:1790" placeholder="SELECT * FRO..." />
-            <marker date="1458584778260" expanded="true" signature="2121:2378" placeholder="SELECT * FRO..." />
-            <marker date="1458584778260" expanded="true" signature="17006:19920" placeholder="..." />
-            <marker date="1458584778260" expanded="true" signature="17913:17924" placeholder="..." />
-            <marker date="1458584778260" expanded="true" signature="21857:21893" placeholder="SELECT id FR..chat..." />
-            <marker date="1458584778260" expanded="true" signature="32022:32033" placeholder="..." />
+            <element signature="e#11663#11684#0#HTML" expanded="true" />
+            <marker date="1458758513993" expanded="true" signature="933:1044" placeholder="SELECT * FRO..." />
+            <marker date="1458758513993" expanded="true" signature="1381:1790" placeholder="SELECT * FRO..." />
+            <marker date="1458758513993" expanded="true" signature="2121:2378" placeholder="SELECT * FRO..." />
+            <marker date="1458758513993" expanded="true" signature="11786:12653" placeholder="..." />
+            <marker date="1458758513993" expanded="true" signature="12547:12558" placeholder="..." />
+            <marker date="1458758513993" expanded="true" signature="12854:12890" placeholder="SELECT id FR..chat..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-63.724136">
+          <caret line="292" column="0" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+            <element signature="n#!!block;n#chatDivStyle#0" expanded="false" />
+            <element signature="n#!!block;n#usersDivStyle#0" expanded="false" />
+            <element signature="n#!!block;n#ajaxUserList#0" expanded="false" />
+            <element signature="n#!!block;n#userInformation#0" expanded="false" />
+            <element signature="n#!!block;n#userSelect#0" expanded="false" />
+            <element signature="n#!!block;n#loadMoreFromChat#0" expanded="false" />
+            <element signature="n#!!block;n#showMoreChatDown#0" expanded="false" />
+            <element signature="e#7638#7711#0" expanded="false" />
+            <element signature="e#8846#9113#0" expanded="false" />
+            <element signature="e#8951#8994#0" expanded="false" />
+            <element signature="e#9199#9320#0" expanded="false" />
+            <element signature="e#9690#9827#0" expanded="false" />
+            <element signature="e#11468#11578#0" expanded="false" />
+            <element signature="e#12034#12598#0" expanded="false" />
+            <element signature="e#12684#12827#0" expanded="false" />
+            <element signature="e#12891#13765#0" expanded="false" />
+            <element signature="e#18242#18316#0" expanded="false" />
+            <element signature="e#18376#18562#0" expanded="false" />
+            <marker date="1458758943036" expanded="true" signature="11806:11817" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/processingAJAX.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3207547">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="n#loadMessages#0;n#!!top" expanded="false" />
+            <element signature="n#displayLastRecordInChat#0;n#!!top" expanded="false" />
+            <element signature="n#countUnreadMessages#0;n#!!top" expanded="false" />
+            <element signature="n#search#0;n#!!top" expanded="false" />
+            <element signature="n#selectedUser#0;n#!!top" expanded="false" />
+            <element signature="n#friendOrStranger#0;n#!!top" expanded="false" />
+            <element signature="n#userListDisplay#0;n#!!top" expanded="false" />
+            <element signature="n#chatHistory#0;n#!!top" expanded="false" />
+            <element signature="n#triggerPusher#0;n#!!top" expanded="false" />
+            <marker date="1458759322815" expanded="true" signature="1033:2493" placeholder="SELECT chat...." />
+            <marker date="1458759322815" expanded="true" signature="1033:2668" placeholder="SELECT chat...." />
+            <marker date="1458759322815" expanded="true" signature="1352:1407" placeholder="SELECT id..." />
+            <marker date="1458759322815" expanded="true" signature="1352:1719" placeholder="SELECT id FR..chat..." />
+            <marker date="1458759322815" expanded="true" signature="2984:3224" placeholder="SELECT id FR..." />
+            <marker date="1458759322815" expanded="true" signature="2984:3295" placeholder="SELECT id, s..." />
+            <marker date="1458759322815" expanded="true" signature="2984:3352" placeholder="SELECT MAX(i..." />
+            <marker date="1458759322815" expanded="true" signature="3600:3681" placeholder="SELECT * FRO..." />
+            <marker date="1458759322815" expanded="true" signature="3600:3687" placeholder="SELECT FROM ..." />
+            <marker date="1458759322815" expanded="true" signature="3600:3749" placeholder="SELECT * FRO..." />
+            <marker date="1458759322815" expanded="true" signature="3600:3750" placeholder="SELECT nickN..." />
+            <marker date="1458759322815" expanded="true" signature="3600:3765" placeholder="SELECT nickN..." />
+            <marker date="1458759322815" expanded="true" signature="4516:5054" placeholder="SELECT u.nic..users..." />
+            <marker date="1458759322815" expanded="true" signature="5984:6210" placeholder="SELECT u.id,..users..." />
+            <marker date="1458759322815" expanded="true" signature="6232:6374" placeholder="SELECT * FRO..users..." />
+            <marker date="1458759322815" expanded="true" signature="6238:6374" placeholder="select * fro..users..." />
+            <marker date="1458759322815" expanded="true" signature="6340:6373" placeholder="SELECT recei..favorites..." />
+            <marker date="1458759322815" expanded="true" signature="6346:6373" placeholder="select recei..favorites..." />
+            <marker date="1458759322815" expanded="true" signature="6712:7453" placeholder="SELECT id, n..." />
           </folding>
         </state>
       </provider>

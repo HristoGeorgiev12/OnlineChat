@@ -66,10 +66,18 @@ form {
             display: none;
         }
 
-        #displayMessages .history:hover {
+        #displayMessages .history {
             cursor: hand;
+            background-color: #aaaaaa;
+        }
+
+
+        #displayMessages .history:hover {
+            /*cursor: hand;*/
             background-color: chartreuse;
         }
+
+
 
         /*ScrollBar for the chat*/
         #chat::-webkit-scrollbar {
@@ -193,6 +201,12 @@ form {
 /*=============================================================*/
 
 /*Users List*/
+    #selectListOfUsers .active {
+        background-color: #f5f5f5;
+    }
+
+
+
     #usersList {
         /*max-height: 352px;*/
         height: 55%;
